@@ -1,0 +1,1 @@
+This git hub repository contains sample application for practising ReactJS library.
