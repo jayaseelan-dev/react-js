@@ -1,20 +1,26 @@
 <!-- https://reactjs.org/docs/add-react-to-a-website.html -->
 <!-- https://reactjs.org/docs/react-without-jsx.html -->
 <html>
+    <head>
+        <!-- Load React Libraries -->
+        <!-- Without ES6  -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.0/react.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.0/react-dom.min.js"></script> 
+
+        <!-- With ES6  -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <!-- <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>  -->
+
+        <!-- With JSX -->
+        <!-- <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+    </head>
     <body>
         <div id="app"></div>
 
-        <!-- Load React Libraries -->
-        <!-- Without ES6  -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.0/react.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.0/react-dom.min.js"></script>
-
-        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-        <!-- With ES6  -->
-        <!-- <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> -->
-
-        <!-- Load our components  -->
+        <!-- Load our components -->
         <script src="index.js"></script>
+
+        <!-- <script type="text/jsx" src="index.js"></script>   -->
     </body>
 </html>
