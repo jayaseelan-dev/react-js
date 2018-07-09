@@ -1,18 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
   render() {
+    // <React.Fragment> </React.Fragment> or <> ... </>
+    // <div className='app-header'>
+    // </div>
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <h1>Login</h1>
+      <div>
+        <label>Username</label>
+        <input id='username' className='control-field' />
+      </div>
+      <div>
+        <label>Password</label>
+        <input id='password' className='control-field' />
+      </div>
+      <div>
+        <input id='remember' className='control-field' 
+              type='checkbox' />
+        <label>Remember me in this system</label>
+      </div>
+      {/* <h4 dangerouslySetInnerHTML={ this.createMarkup() }/> */}
+      <div>
+        <button className='control-field'>Submit</button>
       </div>
     );
   }
